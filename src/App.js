@@ -4,7 +4,8 @@ import FunctionalCompNickname from './components/DefaultFuncComp';
 //first functional comp imported here
 //import ClassCompNickname from './components/ClassComp';
 import {ClassComp, ClickCountButton} from './components/ClassComp';
-import { ButtonClickerFunction } from './components/FuncComp'
+import { ButtonClickerFunction} from './components/FuncComp'
+import { Component } from 'react';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <code>src/App.js</code> seems to be in charge here...<br></br>
+          <code>src/App.js</code>...<br></br>
           *All HTML Tags must be enclosed within a DIV Tag
         </p>
         <a
@@ -28,7 +29,16 @@ function App() {
           <h2><ClassComp></ClassComp></h2>
           <ClickCountButton></ClickCountButton>
           <h2><FunctionalCompNickname></FunctionalCompNickname></h2>
-          <ButtonClickerFunction></ButtonClickerFunction>
+          <ButtonClickerFunction>
+            ({ const { ComponentFunc, count} }) => (
+            //Destructure using Render Prop
+              <div>
+                {ComponentFunc}
+                <p>count: {count} (lowercase because it is not a Component it is extracted from a component) </p>
+              </div>
+            
+            </ButtonClickerFunction>
+
         </body>
         <footer className ="App-footer" alt="logo">
           <img src="/board.jpeg" className="self" alt="pic of maddy" />

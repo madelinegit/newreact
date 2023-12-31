@@ -1,15 +1,22 @@
 import React, { useState } from "react";
 
 export const ButtonClickerFunction = () => {
-  // Define state using the useState hook, which is part of the react API
     const [count, setCount] = useState(0);
 
-  // Render component UI and use state by returning so i think that
-  //returns the Original Tree that then gets duplicated
-    return (
-    <div>
-        <p>Count: {count}</p>
-        <button onClick={() => setCount(count + 1)}>You Clicked Function {count} times </button>
-    </div>
+    const clickEvent= () => {
+        setCount(count + 1);
+    };
+
+    const ComponentFunc = (
+        <div>
+            <button onClick={clickEvent}>You Clicked Function {count} times </button>
+        </div>
     );
+
+    return { ComponentFunc, count };
 };
+//now the click count is returned as its own variable to app.js,
+//changed the function, cleaner in general but also this way the
+//variable could get passed out and exist outside of the func...
+
+
