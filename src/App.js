@@ -30,14 +30,14 @@ function App() {
           <ClickCountButton></ClickCountButton>
           <h2><FunctionalCompNickname></FunctionalCompNickname></h2>
           <ButtonClickerFunction>
-            ({ const { ComponentFunc, count} }) => (
+            {({  ComponentFunc, count  }) =>
             //Destructure using Render Prop
               <div>
                 {ComponentFunc}
                 <p>count: {count} (lowercase because it is not a Component it is extracted from a component) </p>
               </div>
-            
-            </ButtonClickerFunction>
+            };
+          </ButtonClickerFunction>
 
         </body>
         <footer className ="App-footer" alt="logo">

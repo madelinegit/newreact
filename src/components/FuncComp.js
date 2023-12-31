@@ -12,7 +12,8 @@ export const ButtonClickerFunction = () => {
             <button onClick={clickEvent}>You Clicked Function {count} times </button>
         </div>
     );
-
+    console.log('ComponentFunc:', ComponentFunc);
+    console.log('Count:', count);
     return { ComponentFunc, count };
 };
 //now the click count is returned as its own variable to app.js,
