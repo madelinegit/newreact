@@ -21,8 +21,10 @@ export class ClickCountButton extends React.Component {
     render() {
         return (
             <button onClick={this.onClick.bind(this)}>
-                You Clicked {this.state.count} times.
+                You Clicked Class Component {this.state.count} times.
             </button>
         );
     }
 }
+
+// ALTERNATIVE WAY, long way with const in google drive notes

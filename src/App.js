@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import FunctionalCompNickname from './components/FunctionalComp';
+import FunctionalCompNickname from './components/DefaultFuncComp';
 //first functional comp imported here
 //import ClassCompNickname from './components/ClassComp';
 import {ClassComp, ClickCountButton} from './components/ClassComp';
+import { ButtonClickerFunction } from './components/FuncComp'
 
 function App() {
   return (
@@ -22,16 +23,22 @@ function App() {
         >
           Madeline's LinkedIn
         </a>
-        <p><ClickCountButton></ClickCountButton></p>
-        <h2><FunctionalCompNickname></FunctionalCompNickname></h2>
-        <h2><ClassComp></ClassComp></h2>
-      </header>
+        </header>
+        <body>
+          <h2><ClassComp></ClassComp></h2>
+          <ClickCountButton></ClickCountButton>
+          <h2><FunctionalCompNickname></FunctionalCompNickname></h2>
+          <ButtonClickerFunction></ButtonClickerFunction>
+        </body>
+        <footer className ="App-footer" alt="logo">
+          <img src="/board.jpeg" className="self" alt="pic of maddy" />
+        </footer>
+
     </div>
   );
 }
 //first functional component displayed here with default import
 //first class component displayed here with default import
-
 
 
 export default App;
