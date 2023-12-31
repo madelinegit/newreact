@@ -30,14 +30,26 @@ function App() {
           <ClickCountButton></ClickCountButton>
           <h2><FunctionalCompNickname></FunctionalCompNickname></h2>
           <ButtonClickerFunction>
-            {({  ComponentFunc, count  }) =>
+            {/* {({  ComponentFunc, count  }) => [ */}
             //Destructure using Render Prop
-              <div>
+            //make sure the function is wrapped in parentheses after the =>
+            //passes function as a child to a component (render prop)
+            //But React doesn't render plain JavaScript objects as components in JSX.
+            //functions are not valid as a react child
+            {/* <div key = "ComponentFunc">
                 {ComponentFunc}
-                <p>count: {count} (lowercase because it is not a Component it is extracted from a component) </p>
-              </div>
-            };
+              </div>, */}
+              //the comma was important
+              {/* <p key = "count"> */}
+                {/* count: {count} lowercase because it is not a Component it is extracted from a component
+              </p>
+            ]}; */}
+            //ALL THAT STUFF React really didn't like, bc components should return
+            //JSX or React elements directly, not objects containing components or values.
+            //if I want to do arithmetic I will have to call these integers while staying
+            //on this App.js page not passing the values from doc to doc
           </ButtonClickerFunction>
+          {Component}
 
         </body>
         <footer className ="App-footer" alt="logo">
