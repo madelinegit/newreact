@@ -24,6 +24,17 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.Avatar {
+  color: #61dafb;
+  padding: 3vh;
+  /* object-fit: cover; */
+}
+.AvatarPic {
+  /* object-fit: cover; */
+  /* height:  100px; */
+  /* width: 100px; */
+  /* INLINE STYLED, UNDERSTOOD & ALTERED */
+}
 .TopRight {
   margin-right: 5vh;
   color:#61dafb;
