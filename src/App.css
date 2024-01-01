@@ -13,21 +13,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-/* @media (prefers-reduced-motion: no-preference) { */
-  /* .Profile { */
-    /* animation: Profile-spin infinite 20s linear; */
-  /* } */
-/* } */
-/* didnt do the smame thing when i tried */
-/* .Profile { */
-  /* justify-content: flex-start; */
-/* } */
-
-.TopRight1 {
-  margin-right: 5vh;
-  color:red;
-}
-
 .App-header, .App-footer {
   background-color: #282c34;
   min-height: 0vh;
@@ -39,10 +24,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.TopRight {
+  margin-right: 5vh;
+  color:#61dafb;
+  border: 2px solid #61dafb;
+  border-radius: 30%;
+  padding: 3%;
+}
 
 .App-link {
   color: #61dafb;
-
 }
 
 @keyframes App-logo-spin {

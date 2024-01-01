@@ -21,7 +21,7 @@ function App() {
       <header className="App-header">
         <Profile className="Profile"></Profile>
         <img src={logo} className="App-logo" alt="logo" />
-        <TopRight></TopRight>
+        <TopRight className="TopRight"></TopRight>
       </header>
 
       <body>
