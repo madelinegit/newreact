@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -12,20 +13,36 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* @media (prefers-reduced-motion: no-preference) { */
+  /* .Profile { */
+    /* animation: Profile-spin infinite 20s linear; */
+  /* } */
+/* } */
+/* didnt do the smame thing when i tried */
+/* .Profile { */
+  /* justify-content: flex-start; */
+/* } */
+
+.TopRight1 {
+  margin-right: 5vh;
+  color:red;
+}
 
 .App-header, .App-footer {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 0vh;
+  max-height: 200vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+
 }
 
 @keyframes App-logo-spin {
@@ -37,6 +54,7 @@
   }
 }
 
+/* //clicker tools */
 button {
   background-color: black;
   color: white;
@@ -47,9 +65,11 @@ button {
   cursor: pointer;
 }
 
+/* //pic in foot */
 .self {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  padding: 10vh;
   object-fit: cover;
 }
