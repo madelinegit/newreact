@@ -20,11 +20,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Profile className="Profile"></Profile>
-        <img src={logo} className="App-logo" alt="logo" />
-        <TopRight className="TopRight"></TopRight>
+        <a href = "https://github.com/madelinegit/newreact"><img src={logo} className="App-logo" alt="logo" /></a>
+
       </header>
 
       <body>
+        <TopRight className=""></TopRight>
         <h2><ClassComp></ClassComp></h2>
         <ClickCountButton></ClickCountButton>
         <h2><FunctionalCompNickname></FunctionalCompNickname></h2>

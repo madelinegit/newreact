@@ -1,6 +1,7 @@
 .App {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .App-logo {
@@ -14,15 +15,20 @@
   }
 }
 .App-header, .App-footer {
-  background-color: #282c34;
+  width: 100vw;
+  display: flex;
   min-height: 0vh;
   max-height: 200vh;
-  display: flex;
-  /* flex-direction: column; */
+  background-color: #282c34;
   align-items: center;
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Avatar {
   color: #61dafb;
@@ -36,11 +42,15 @@
   /* INLINE STYLED, UNDERSTOOD & ALTERED */
 }
 .TopRight {
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
   margin-right: 5vh;
   color:#61dafb;
   border: 2px solid #61dafb;
-  border-radius: 30%;
-  padding: 3%;
+  /* border-radius: 30%; */
+  padding: 15%;
+  background-color:#282c34;
 }
 
 .App-link {
