@@ -8,17 +8,23 @@ import React, { useState } from "react";
 // The second value, setColor, is the function that is used to update our state.
 
 export function FavoriteColor() {
-    const [color, setColor] = useState("...");
+    const [color, setColor] = useState("black");
+    const [ContainerColor, setContainerColor] = useState('');
+
+    const resetColor = () => {
+        setColor('...');
+        ContainercColor('black');
+    };
 
     return (
         <>
         <div class="WrapContainer"></div>
-        <div class = "ButtonContainer"style={{ backgroundColor: color }}>
+        <div class = {'ButtonContainer '}style={{ backgroundColor: containerColor }}>
             <h1 style= {{ color: 'whitesmoke' }} >My favorite color is {color}!</h1>
-            <button class="ColorButton" onClick={() => setColor("...")} >
+            <button class="ColorButton" onClick={resetColor} >
                 Reset
             </button>
-            <button class="ColorButton" onClick={() => setColor("red")}>
+            <button class="ColorButton" onClick={() => setColor("red") }>
                 Red
             </button><br></br>
             <button class="ColorButton" onClick={() => setColor("orange")}>
