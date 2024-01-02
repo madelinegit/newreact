@@ -9,11 +9,11 @@ import React, { useState } from "react";
 
 export function FavoriteColor() {
     const [color, setColor] = useState("...");
-    const [ContainerColor, setContainerColor] = useState('black');
+    const [ContainerColor, setContainerColor] = useState('gray');
 
     const resetColor = () => {
         setColor('...');
-        setContainerColor('black');
+        setContainerColor('gray');
     };
 
     return (
@@ -27,24 +27,24 @@ export function FavoriteColor() {
             <button class="ColorButton" onClick={() => { setColor("red"); setContainerColor("red"); }}>
                 Red
             </button><br></br>
-            <button class="ColorButton" onClick={() => setColor("orange")}>
+            <button class="ColorButton" onClick={() => { setColor("orange"); setContainerColor("orange"); }}>
                 Orange
             </button>
-            <button class="ColorButton" onClick={() => setColor("yellow")}>
+            <button class="ColorButton" onClick={() => { setColor("yellow"); setContainerColor("yellow"); }}>
                 Yellow
             </button>
             <br></br>
-            <button class="ColorButton" onClick={() => setColor("green")}>
+            <button class="ColorButton" onClick={() => { setColor("green"); setContainerColor("green"); }}>
                 Green
             </button>
-            <button class="ColorButton" onClick={() => setColor("blue")}>
+            <button class="ColorButton" onClick={() => { setColor("blue"); setContainerColor("blue"); }}>
                 Blue
             </button>
             <br></br>
-            <button class="ColorButton" onClick={() => setColor("indigo")}>
+            <button class="ColorButton" onClick={() => { setColor("indigo"); setContainerColor("indigo"); }}>
                 Indigo
             </button>
-            <button class="ColorButton" onClick={() => setColor("violet")}>
+            <button class="ColorButton" onClick={() => { setColor("violet"); setContainerColor("violet"); }}>
                 Violet
             </button>
         </div>
