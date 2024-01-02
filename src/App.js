@@ -26,9 +26,10 @@ function App() {
       </header>
 
       <body>
-      <FavoriteColor></FavoriteColor>
-      <SimpleList></SimpleList>
-
+        <div class="WrapContainer">
+          <FavoriteColor></FavoriteColor>
+          <SimpleList></SimpleList>
+        </div>
 
         <TopRight className="TopRight"></TopRight>
         <div className="WrapContainer">

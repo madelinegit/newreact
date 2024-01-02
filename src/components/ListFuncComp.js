@@ -6,7 +6,7 @@ export function SimpleList() {
 
     const addItem = () => {
         if (newItem !== '') {
-        setItems([items, newItem]);
+        setItems([...items, newItem]);
         setNewItem('');
         }
     };
@@ -23,17 +23,17 @@ export function SimpleList() {
 
 return (
     <div class = "ButtonContainer">
-        <h1>Simple To Do List </h1>
+        <h1>Simple To Do List... </h1>
         <div>
-            <input
+            <input className ="TextInputContainer"
             type="text"
             value={newItem}
             onChange={(e) => setNewItem(e.target.value)}
             />
+        <button class="ColorButton" onClick={addItem}>Add To List</button>
         </div>
-        <button onClick={addItem}>Add Item</button>
         <ul>{listItems}</ul>
-        <button onClick={clearList}>Clear List</button>
+        <button class = "ColorButton" onClick={clearList}>Reset</button>
         </div>
     );
 }
