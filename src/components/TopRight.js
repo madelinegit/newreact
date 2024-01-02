@@ -15,7 +15,6 @@ export function TopRight() {
         <li> Name links to Linkedin</li>
         <li>Logo links to project repo </li>
         <li>Mix of inline style & stylesheet (So far I prefer stylesheet)</li>
-        <li>First Ever JSX Project </li>
     </container>
     );
 }
