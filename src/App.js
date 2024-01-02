@@ -21,10 +21,11 @@ function App() {
       <header className="App-header">
         <Profile className="Profile"></Profile>
         <img src={logo} className="App-logo" alt="logo" />
-        <TopRight className="TopRight"></TopRight>
+
       </header>
 
       <body>
+        <TopRight className="TopRight"></TopRight>
         <h2><ClassComp></ClassComp></h2>
         <ClickCountButton></ClickCountButton>
         <h2><FunctionalCompNickname></FunctionalCompNickname></h2>
@@ -51,6 +52,7 @@ function App() {
         {Component}
 
         </body>
+
         <footer className ="App-footer" alt="logo">
           <img src="/board.jpeg" className="self" alt="pic of maddy" />
         </footer>
