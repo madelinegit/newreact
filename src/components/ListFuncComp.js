@@ -32,7 +32,7 @@ return (
             />
         <button class="ColorButton" onClick={addItem}>Add To List</button>
         </div>
-        <ul>{listItems}</ul>
+        <ul style={{fontSize: '18px', listStyleType: 'square'}}>{listItems}</ul>
         <button class = "ColorButton" onClick={clearList}>Reset</button>
         </div>
     );

@@ -17,7 +17,8 @@ export function TopRight() {
         <li>Renamed the default import</li>
         <li>Mix of inline style & stylesheet (I prefer stylesheet)</li>
         <li>Flexbox & wraps utilized</li>
-        <li>State managed, clickevents handles, syles conditionally rendered</li>
+        <li>State managed, clickevents handles</li>
+        <li>syles conditionally rendered</li>
         <li>Name links to Linkedin</li>
         <li>Logo links to project repo </li>
 
