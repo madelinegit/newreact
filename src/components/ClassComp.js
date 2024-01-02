@@ -2,7 +2,7 @@ import React from "react";
 
 export class ClassComp extends React.Component{
     render(){
-        return <p> My First Class Component</p>
+        return <p> This is my first Class Component.</p>
     }
 }
 

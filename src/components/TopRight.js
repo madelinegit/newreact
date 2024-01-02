@@ -8,13 +8,18 @@ export function TopRight() {
     //had put style={TopRightStyle} in the div class below
     return (
     <container class="TopRight" >
-        <p>Note That in JSX...</p>
+        {/* <p>Note That in JSX...</p>
         <li>HTML is contained in Divs</li>
-        <li>Topright class defined in TopRight.jsx</li>
-        <p> Details on this page...</p>
-        <li> Name links to Linkedin</li>
+        <li>Topright class defined in TopRight.jsx</li> */}
+        <h2> Details about this page...</h2>
+        <li>Created functional & class components</li>
+        <li>Performed normal & default exports</li>
+        <li>Default import renamed</li>
+        <li>Mix of inline style & stylesheet (I prefer stylesheet)</li>
+        <li>Flexbox & wraps utilized</li>
+        <li>Name links to Linkedin</li>
         <li>Logo links to project repo </li>
-        <li>Mix of inline style & stylesheet (So far I prefer stylesheet)</li>
+
     </container>
     );
 }

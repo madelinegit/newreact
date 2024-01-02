@@ -12,6 +12,7 @@ import Profile from './components/ProfileFuncComp';
 //normal import only one default export is allowed
 // import { Component } from 'react';
 import { TopRight } from './components/TopRight';
+import {FavoriteColor} from './components/UseState';
 
 
 
@@ -25,17 +26,19 @@ function App() {
       </header>
 
       <body>
+      <FavoriteColor></FavoriteColor>
 
-      
         <TopRight className="TopRight"></TopRight>
-        <div className = "buttoncont">
-        <h2><ClassComp></ClassComp></h2>
-          <ClickCountButton></ClickCountButton>
+        <div className="WrapContainer">
+        <div className = "ButtonContainer">
+          <h2><ClassComp></ClassComp></h2><br></br>
           <h2><FunctionalCompNickname></FunctionalCompNickname></h2>
-          <ButtonClickerFunction>
-          </ButtonClickerFunction>
-      </div>
-
+        </div>
+        <div className = "ButtonContainer">
+          <ClickCountButton></ClickCountButton>
+          <ButtonClickerFunction></ButtonClickerFunction>
+        </div>
+        </div>
         </body>
 
         <footer className ="App-footer" alt="logo">

@@ -9,7 +9,7 @@ export const ButtonClickerFunction = () => {
 
     const ComponentFunc = (
         <div>
-            <button onClick={clickEvent}>You Clicked Function {count} times </button>
+            <button onClick={clickEvent}>You Clicked Func. Component {count} times. </button>
         </div>
     );
 
@@ -18,7 +18,6 @@ export const ButtonClickerFunction = () => {
 
     return (
       <div>{ComponentFunc}
-        {/* <p>Count that I was planning on passing from page to page: {count} </p> */}
       </div>
     );
 };

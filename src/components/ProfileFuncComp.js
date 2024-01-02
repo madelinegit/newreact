@@ -4,7 +4,7 @@ import React from "react";
 const user = {
     name: 'Madeline Gall',
     imageUrl: 'avatar.jpg',
-    imageSize: 120,
+    imageSize: 150,
     // unit of measurement??^
 };
 
@@ -15,7 +15,7 @@ export default function Profile() {
     // }
 const containerStyle = {
     display: 'flex',  //should have made name & pic go next to each other
-    textDecoration: 'none', // remove underline
+    //textDecoration: 'none', // remove underline occurs at .Avatar in styles
 };
 
 return (
