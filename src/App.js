@@ -13,7 +13,7 @@ import Profile from './components/ProfileFuncComp';
 // import { Component } from 'react';
 import { TopRight } from './components/TopRight';
 import {FavoriteColor} from './components/UseState';
-
+import {SimpleList} from './components/ListFuncComp';
 
 
 function App() {
@@ -27,6 +27,8 @@ function App() {
 
       <body>
       <FavoriteColor></FavoriteColor>
+      <SimpleList></SimpleList>
+
 
         <TopRight className="TopRight"></TopRight>
         <div className="WrapContainer">

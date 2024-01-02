@@ -18,7 +18,7 @@ export function FavoriteColor() {
 
     return (
         <>
-        <div class="WrapContainer"></div>
+        <div class=""></div>
         <div class = {'ButtonContainer'}style={{ backgroundColor: ContainerColor }}>
             <h1 style= {{ color: 'whitesmoke' }} >My favorite color is {color}!</h1>
             <button class="ColorButton" onClick={resetColor} >
